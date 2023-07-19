@@ -19,7 +19,15 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <Headline title="About Page" page="about"/>
+        <Headline
+          title="About Page"
+          page="about"
+          number={1111}
+          array={[1, 2, 3]}
+          obj={{ foo: "foo", bar: "bar" }}
+          boolean={true}
+          code={ <code className={styles.code}>pages/about.js</code>}
+        />
 
         <Links />
 
